@@ -16,13 +16,14 @@ import { Application } from '@nativescript/core'
 export class AppComponent implements OnInit {
   private _activatedUrl: string
   private _sideDrawerTransition: DrawerTransitionBase
+  name = "TestName111123121"
 
   constructor(private router: Router, private routerExtensions: RouterExtensions) {
     // Use the component constructor to inject services.
   }
 
   ngOnInit(): void {
-    this._activatedUrl = '/home'
+    this._activatedUrl = '/shopping-lists'
     this._sideDrawerTransition = new SlideInOnTopTransition()
 
     this.router.events
