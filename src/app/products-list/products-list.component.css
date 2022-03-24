@@ -1,1 +1,6 @@
 /* Add mobile styles for the component here.  */
+.items{
+    color: green;
+    min-height: 100px;
+    border: 2px solid white !important;
+}

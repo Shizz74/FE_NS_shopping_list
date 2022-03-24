@@ -3,7 +3,8 @@ import { Routes } from '@angular/router'
 import { NativeScriptRouterModule } from '@nativescript/angular'
 
 const routes: Routes = [
-  { path: '', redirectTo: '/shopping-lists', pathMatch: 'full' },
+  // { path: '', redirectTo: '/shopping-lists', pathMatch: 'full' },
+  { path: '', redirectTo: '/category', pathMatch: 'full' },
   {
     path: 'shopping-lists',
     loadChildren: () => import('~/app/shopping-list/shopping-list.module').then((m) => m.ShoppingListModule),
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'products',
     loadChildren: () => import('~/app/products-list/products-list.module').then((m) => m.ProductsListModule),
+  },
+  {
+    path: 'category',
+    loadChildren: () => import('~/app/category-list/category-list.module').then((m) => m.CategoryListModule),
   },
   {
     path: 'search',

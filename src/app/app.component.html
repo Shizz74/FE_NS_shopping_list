@@ -33,6 +33,16 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
           <Label col="1" text="Produkty" class="p-r-10"></Label>
         </GridLayout>
 
+        <GridLayout
+          columns="auto, *"
+          class="nt-drawer__list-item"
+          [class.-selected]="isComponentSelected('/category')"
+          (tap)="onNavItemTap('/category')"
+        >
+          <Label col="0" text="&#xf1ea;" class="nt-icon far"></Label>
+          <Label col="1" text="Kategorie" class="p-r-10"></Label>
+        </GridLayout>
+
         <!-- <GridLayout
           columns="auto, *"
           class="nt-drawer__list-item"

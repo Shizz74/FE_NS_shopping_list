@@ -1,0 +1,17 @@
+<ActionBar class="action-bar" style="position: absolute; left: 0;">
+    <!-- <NavigationButton visibility="hidden"></NavigationButton> -->
+    <GridLayout columns="50, *, 50">
+      <Label class="fas" text="&#xf0c9;" (tap)="onDrawerButtonTap()" col="0"></Label>
+      <Label class="action-bar-title" text="Kategorie" col="1"></Label>
+      <Label class="fas" text="&#xf067;" (tap)="onNavItemTap('/category/add')" col="2" width="100%"></Label>
+    </GridLayout>
+  </ActionBar>
+
+  <ListView [items]="products" class="list-group">
+    <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
+      <!-- The item template can only have a single root view container (e.g. GridLayout, StackLayout, etc.)-->
+      <GridLayout>
+        <label [text]="item.name" class="list-group-item"></label>
+      </GridLayout>
+    </ng-template>
+  </ListView>

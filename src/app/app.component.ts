@@ -9,6 +9,8 @@ import {
 import { filter } from 'rxjs/operators'
 import { Application } from '@nativescript/core'
 
+import { env } from '../environment/environment'
+
 @Component({
   selector: 'ns-app',
   templateUrl: 'app.component.html',
