@@ -15,6 +15,7 @@ import { CategoryService } from '../_services/category.service'
 })
 export class CategoryListComponent implements OnInit {
   products: any;
+  items = ['1', '2', '3'];
   
 
   constructor(
